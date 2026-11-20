@@ -19,7 +19,7 @@ def add_lost_item(item_name: str, location: str):
         "type": "Lost"
     }
 
-# Add found item
+# Add found items
 @app.post("/found-item")
 def add_found_item(item_name: str, location: str):
     return {
