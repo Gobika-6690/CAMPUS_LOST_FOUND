@@ -33,6 +33,6 @@ def add_found_item(item_name: str, location: str):
 @app.get("/match")
 def match_items(lost_item: str, found_item: str):
     if lost_item.lower() == found_item.lower():
-        return {"message": "Possible Match Found!"}
+        return {"message": "Possible Match Founded!"}
     else:
-        return {"message": "No Match Found"}
+        return {"message": "No Match Founded"}
